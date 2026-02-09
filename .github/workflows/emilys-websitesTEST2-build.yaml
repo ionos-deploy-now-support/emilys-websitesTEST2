@@ -35,7 +35,7 @@ jobs:
       - name: Build Node assets
         env:
           CI: true
-          SITE_URL: ${{ inputs['site-url'] }}
+          SITE_URL: ${{ inputs.site-url }}
           NODE_OPTIONS: "--openssl-legacy-provider"
         run: |
           npm ci
@@ -48,5 +48,8 @@ jobs:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-eu.ionos.space
           project-id: 27e211fd-dbec-4bd5-81f6-444cf2df2a54
-          branch-id: ${{ inputs.branch
-
+          branch-id: ${{ inputs.branch-id }}
+          version: ${{ github.sha }}
+          folder: ${{ env.DEPLOYMENT_FOLDER }}
+          config-file: .deploy-now/emilys-websitesTEST2/config.yaml
+          action: upload
