@@ -21,5 +21,8 @@
     "@vue/cli-plugin-babel": "^3.12.1",
     "@vue/cli-service": "^3.12.1",
     "vue-template-compiler": "^2.6.12"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
