@@ -1,0 +1,25 @@
+{
+  "name": "emilys-websites",
+  "description": "Emily's Websites | Bespoke websites and software development",
+  "author": "Emily Smith",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "@prismicio/client": "^4.0.0",
+    "@prismicio/vue": "^2.0.9",
+    "emailjs-com": "^2.6.4",
+    "prismic-dom": "^2.2.5",
+    "vue": "^2.6.12",
+    "vue-router": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-service": "^3.12.1",
+    "vue-template-compiler": "^2.6.12"
+  }
+}

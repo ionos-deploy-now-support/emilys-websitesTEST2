@@ -1,0 +1,220 @@
+{
+  "Main" : {
+    "background_image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Background Image"
+      }
+    },
+    "title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Title",
+        "placeholder" : "Main Title"
+      }
+    },
+    "tagline" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph",
+        "label" : "Tagline",
+        "placeholder" : "Site Tagline..."
+      }
+    }
+  },
+  "Services" : {
+    "services" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "service_name" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading3",
+              "label" : "Service Name"
+            }
+          },
+          "service_description" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "paragraph,strong,em,hyperlink,list-item,o-list-item",
+              "allowTargetBlank" : true,
+              "label" : "Service Description"
+            }
+          }
+        },
+        "label" : "Services"
+      }
+    },
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : null,
+        "choices" : {
+          "service_details" : {
+            "type" : "Slice",
+            "fieldset" : "Service Details",
+            "description" : "Service Details",
+            "icon" : "dehaze",
+            "display" : "list",
+            "non-repeat" : {
+              "service_title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading3",
+                  "label" : "Service Title"
+                }
+              },
+              "service_details_text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                  "allowTargetBlank" : true,
+                  "label" : "Service Details Text"
+                }
+              },
+              "process_title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading4",
+                  "label" : "Process Title"
+                }
+              }
+            },
+            "repeat" : {
+              "step_number" : {
+                "type" : "Number",
+                "config" : {
+                  "label" : "Step Number"
+                }
+              },
+              "step_title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading5",
+                  "label" : "Step Title"
+                }
+              },
+              "step_description" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,strong,em,hyperlink",
+                  "allowTargetBlank" : true,
+                  "label" : "Step Description"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Pricing" : {
+    "pricing_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading3",
+        "label" : "Pricing Title"
+      }
+    },
+    "body1" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : null,
+        "choices" : {
+          "price_card" : {
+            "type" : "Slice",
+            "fieldset" : "Price Card",
+            "description" : "Price Card",
+            "icon" : "attach_money",
+            "display" : "list",
+            "non-repeat" : {
+              "price_name" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading4",
+                  "label" : "Price Name"
+                }
+              },
+              "price_gbp" : {
+                "type" : "Number",
+                "config" : {
+                  "label" : "Price in GBP"
+                }
+              },
+              "price_eur" : {
+                "type" : "Number",
+                "config" : {
+                  "label" : "Price in EUR"
+                }
+              },
+              "price_details" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph,preformatted,heading5,heading6,strong,em,hyperlink,list-item,o-list-item,rtl",
+                  "allowTargetBlank" : true,
+                  "label" : "Price Details"
+                }
+              }
+            },
+            "repeat" : { }
+          }
+        }
+      }
+    }
+  },
+  "Testimonials" : {
+    "testimonials_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading3",
+        "label" : "Testimonials Title"
+      }
+    },
+    "testimonial" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "testimonial_title" : {
+            "type" : "StructuredText",
+            "config" : {
+              "single" : "heading4",
+              "label" : "Testimonial Title"
+            }
+          },
+          "testimonial_text" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "paragraph",
+              "allowTargetBlank" : true,
+              "label" : "Testimonial Text"
+            }
+          },
+          "customer_name" : {
+            "type" : "StructuredText",
+            "config" : {
+              "multi" : "paragraph",
+              "allowTargetBlank" : true,
+              "label" : "Customer Name"
+            }
+          }
+        },
+        "label" : "Testimonial"
+      }
+    }
+  },
+  "Contact" : {
+    "contact_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading3",
+        "label" : "Contact Title"
+      }
+    }
+  }
+}
