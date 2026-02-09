@@ -32,11 +32,11 @@ jobs:
         with:
           node-version: v18.x
 
-        - name: Build Node assets
+       - name: Build Node assets
         env:
           CI: true
           SITE_URL: ${{ inputs.site-url }}
-          NODE_OPTIONS: --openssl-legacy-provider
+          NODE_OPTIONS: "--openssl-legacy-provider"
         run: |
           npm ci
           npm run build
